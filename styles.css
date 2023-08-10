@@ -13,7 +13,6 @@
   margin: 0;
 }
 
-/* \TODO: delete this */
 body {
   font-family: var(--root-font-family);
   box-sizing: border-box;
@@ -22,10 +21,8 @@ body {
 }
 
 #app {
-  background-image: url("design/desktop-design.jpg");
-  /* background-position: center; */
+  background-image: linear-gradient(to right bottom, var(--LightGray), rgb(218, 228, 226));
   background-size: 100%;
-  opacity: .4;
   z-index: -1;
   width: 100vw;
   height: 100vh;
@@ -37,27 +34,45 @@ body {
 }
 
 .qr-card-container {
-  /* background-color: var(--White); */
-  background-color: pink;
-  opacity: .5;
+  background-color: var(--White);
+  opacity: 1;
   width: 27.5em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   height: 40rem;
-  margin-top: 4rem;
+  /* margin-top: 5rem; */
   align-items: center;
-  border-radius: 1.2rem;
+  border-radius: 1.7rem;
+  -webkit-box-shadow: 2px 46px 42px -35px rgba(188, 196, 195, 1);
+  -moz-box-shadow: 2px 46px 42px -35px rgba(188, 196, 195, 1);
+  box-shadow: 2px 46px 42px -35px rgba(188, 196, 195, 1);
 }
 
 .qr-card-container section h1 {
   font-weight: 400 700;
+  font-size: 29px;
+  color: var(--DarkBlue);
+}
+
+.qr-card-container section p {
+  font-weight: 400 700;
+  font-size: 20px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  letter-spacing: 0.01em;
+  color: var(--GrayishBlue);
 }
 
 .qr-card-container section {
   font-weight: 400 700;
-  padding: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: center;
+  margin-top: 1.8rem;
+
 }
 
 .qr-card-container .qr-container {
@@ -66,13 +81,49 @@ body {
   justify-content: center;
   border-radius: 1rem;
   overflow: hidden;
-  background-color: red;
   width: fit-content;
 
-  margin-top: 1.8rem;
+  margin-top: 1.3rem;
 }
 
 .qr-card-container .qr-container img {
-  width: 23rem;
+  width: 23.2rem;
   height: auto;
+}
+
+/* media queries */
+
+@media screen and (max-width:375px) {
+  .qr-card-container {
+    width: 85%;
+    height: 30rem;
+  }
+
+  .qr-card-container .qr-container {
+    width: 100%;
+    overflow: visible;
+
+  }
+
+  .qr-card-container .qr-container img {
+    width: 18rem;
+    border-radius: 1rem;
+  }
+
+
+  .qr-card-container section {
+    margin-top:.8rem;
+  }
+
+  .qr-card-container section h1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    /* margin-top: 5rem; */
+  }
+
+  .qr-card-container section p {
+    width: 18rem;
+    font-size: 1rem;
+  }
 }
