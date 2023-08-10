@@ -1,25 +1,15 @@
 {
-  "name": "qr-code-component-main",
-  "version": "1.0.0",
-  "description": "This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
-  "main": "index.html",
+  "name": "vite-react-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "build": "npm run clean && npm run build",
-    "clean": "rm -rf dist",
-    "copy-assets": "mkdir -p dist && cp -r src dist",
-    "optimize-assets": "echo 'Optimizing assets...'"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "npm-run-all": "^4.1.5"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dastageer-hc/qr-code-static-page.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dastageer-hc/qr-code-static-page/issues"
-  },
-  "homepage": "https://github.com/dastageer-hc/qr-code-static-page#readme"
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  }
 }
