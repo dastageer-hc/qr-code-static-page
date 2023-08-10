@@ -4,7 +4,7 @@
   "description": "This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
   "main": "index.html",
   "scripts": {
-    "build": "npm run clean && npm run copy-assets && npm run optimize-assets",
+    "build": "deployctl deploy --project=useful-tiger-22 https://deno.land/std@0.171.0/http/file_server.ts",
     "clean": "rm -rf dist",
     "copy-assets": "mkdir -p dist && cp -r src dist",
     "optimize-assets": "echo 'Optimizing assets...'"
