@@ -10,9 +10,17 @@
 
 /* \TODO: delete this */
 body {
+  /* background-image: url("design/desktop-design.jpg"); */
+  /* background-position: center; */
+  /* background-size: 100%; */
+}
+
+.test {
   background-image: url("design/desktop-design.jpg");
   /* background-position: center; */
   background-size: 100%;
+  opacity: .4;
+  z-index: -1;
 }
 
 h1 {
