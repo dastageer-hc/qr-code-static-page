@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run clean && npm run copy-assets && npm run optimize-assets",
     "clean": "rm -rf dist",
-    "copy-assets": "mkdir -p dist && cp -r src/* dist/",
+    "copy-assets": "mkdir -p dist && cp -r src dist",
     "optimize-assets": "echo 'Optimizing assets...'"
   },
   "devDependencies": {
